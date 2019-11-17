@@ -1,0 +1,245 @@
+body{
+  font-family: verdana,calibri,sans-serif;
+  margin-top:  0px;
+  padding: 0px;
+}
+input.submit { height: 24px; 
+  font-weight: bold;  
+  border: none; 
+  background-color:#222;
+  padding: 3px; 
+  color: #FFF; 
+}
+input.search { 
+  width:220px;
+  background-color:#222;
+  color:#eee;border:1px solid #555;
+  padding:5px;}
+#titre_principal{
+  display: flex;
+  flex-direction: column;
+}
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#tete{
+   display: flex;
+   height: 70px;
+}
+#bloc1{
+  width: 125px;
+}
+#bloc2{
+  width: 125px;
+}
+#compte{
+  flex: 1.2;
+    position: relative;
+   /* box-shadow: 0px 2px 5px #1c1a19;*/
+    border-radius: 0px;
+   /* padding: 10px;*/
+    color: rgb(0,0,0);
+    font-size: 0.9em;
+    text-align: right;
+}
+nav{
+  width: 100%;
+  background-color: rgb(255,255,255);
+}
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+nav li{
+   list-style-type: none;/*faire disparaitre les bouton devant les menu*/
+}
+nav input[type=checkbox]{
+  display: none;
+}
+nav label{
+  display: none;/*faire disparaitre label*/
+}
+nav >ul >li{
+    float: right;/*affichage menu vertical*/
+    position: relative;/*prendre toute l'ecran*/
+}
+nav > ul::after{
+   content: "";
+   display: table;
+   clear: both;
+}
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  }
+div a{
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+  div a:hover{
+    text-decoration: underline;
+    
+  }
+.submenu{
+   display: none;/*cacher sous menu*/ 
+}
+nav > ul > li > a{
+  padding: 20px 30px; 
+  color:rgb(0,0,0); 
+}
+nav li:hover .submenu{/*on sible nos sous menu*/
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left:0px;/*pour que les sous-menu s'affiche en bas */
+  padding: 0px; 
+  z-index: 1000;/*afficher les onglets au dessus du contenu*/
+}
+.submenu li a{
+  padding: 15px 30px;
+  font-size: 15px;
+  color:#222538;
+  width: 270px; 
+}
+.submenu li{
+  border-bottom: 1px solid #CCC;
+
+}
+.menu-res:hover{
+     border-top:5px solid #e44d26;
+     background-color: rgba(228,77,38,0.15);
+}
+.menu-resev:hover{
+     border-top:5px solid #0070bb;
+     background-color: rgba(000,112,192,0.15);
+}
+.menu-infos:hover{
+     border-top:5px solid #f1dc4f;
+     background-color: rgba(241,221,79,0.15);
+}
+.menu-accueuil :hover{
+     border-top:5px solid #BBB;
+     background-color: rgba(220,220,220,0.15);
+}
+.menu-ligne:hover{
+  border-top:5px solid #BBB;
+    background-color: rgba(220,220,220,0.15);
+}
+nav > ul > li:hover a{
+  padding: 15px 30px 20px 30px;
+}
+
+.menu-accueil .submenu{
+  background-color: rgb(230,100,40);
+}
+.menu-res .submenu{
+  background-color: rgb(230,100,40);
+}
+.menu-infos .submenu{
+  background-color: rgb(250,215,100);
+}
+.menu-resev .submenu{
+  background-color: rgb(000,90,220);
+}
+.submenu li:hover a{
+  color:#EEE;
+  font-weight: bold;
+}
+.menu-res .submenu li:hover{
+  background-color: rgb(000,50,60);
+}
+.menu-infos .submenu li:hover{
+  background-color: rgb(200,165,75);
+}
+.menu-resev .submenu li:hover{
+  background-color: rgb(000,12,75);
+}
+#image_paris{
+  
+  height: 300px;
+  text-align: center;
+
+}
+#image_piscine{
+  border-top: 5px;
+  border-bottom: 5px;
+  text-align: center;
+
+}
+#image_photo{
+  border-top: 5px;
+  border-bottom: 5px;
+  text-align: center;
+}
+#espace{
+  text-align: center;
+  height: 100px
+}
+#reseaux_sociaux{
+  text-align: center;
+  height: 10px
+}
+.facebook
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    /*border: 1px solid #760001;*/
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+nav input[type=checkbox]:checked - ul{
+   display: block;
+}
+footer{
+  /*background: url('images/fond_rouge.png');*/
+  display: flex;
+  border-radius: 5px;
+  background-color: rgb(255,255,255);
+}
+
+
+#design {
+  clear:both;padding:5px 0;
+  color:#555;
+  text-align:center;
+  border-top:1px solid #333;
+}
+#design a {color:#555;
+}
+.menu-serviceClient{
+     border-top:5px solid #e44d26;
+    
+}
+.menu-reservationLigne{
+     border-top:5px solid #0070bb;
+     
+}
+.menu-Propos{
+     border-top:5px solid #f1dc4f;
+     
+}
+.menu-Autres{
+     border-top:5px solid #BBB;
+    
+}
+@media screen and (max-width: 780px){
+  .menu-mobile{
+    display: block;
+    color:#BBB;
+    background-color: rgba(29,197,151,0.97);
+    text-align: center;
+    padding: 12px 0px;
+  }
+  nav ul{
+    display: none;
+  }
+}

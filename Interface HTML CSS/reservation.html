@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LOJL hotels reservation</title>  
+    <!--styles-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styleReser.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="/ressources/demos/style.css">
+  <link rel="stylesheet" href="jquery-ui.structure.css">
+  <link rel="stylesheet" href="jquery-ui.theme.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+    $( "#datepicker2" ).datepicker();
+    
+  } );
+  </script>
+  </head>
+  <body>
+    <div class="header">
+    </div>
+
+    <div class="content-wrap">
+      <div class="content">
+        <!--CONTACT-->
+        <section id="contact" class="white-bg">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h3 class="title-small">
+                  <span>LOJL hotels</span><br><br>
+                  <span>Réservations</span>
+                </h3>
+                <p class="content-detail">
+                  <img src="images/photo1.jpg" alt="logo du site"
+                </p>
+
+              </div>
+              <div class="col-md-9 content-right">
+                <form>
+                  <div class="group">
+                    <input required="" type="text"><span class="highlight"></span><span class="bar"></span><label>Nom</label>
+                  </div>
+                  <div class="group">
+                    <input required="" type="email"><span class="highlight"></span><span class="bar"></span><label>Email</label>
+                  </div>
+                  <div class="group">
+                    <input required="" type="text"><span class="highlight"></span><span class="bar"></span><label>Où voulez-vous partir?</label>
+                  </div>
+                  <div class="group">
+                    Chambres :
+                  <select required="" type="text"><span class="highlight"></span><span class="bar"></span> <option value="parti">1 chambre - 1 adulte</option>
+                 <option value="profe">1 chambre - 2 adultes</option>
+                 <option value="profe">1 chambre - 3 adultes</option>
+                 <option value="profe">2 chambres - 2 adultes</option>
+                 <option value="profe">2 chambres - 4 adultes</option>
+                 <option value="insti">Plus d'options</option></select>
+                  </div>
+                  <div class="group">
+                    <input required="" type="date" id="datepicker"><span class="highlight"></span><span class="bar"></span><label>Date d'arrivée</label>
+                  </div>
+                  <div class="group">
+                    <input required="" type="date" id="datepicker2"><span class="highlight"></span><span class="bar"></span><label>Date de départ</label>
+                  </div>
+
+                  <input id="sendMessage" name="sendMessage" type="submit" value="RESERVEZ">
+                </form>
+                <br><br>
+                <p align="right"><a href="index.html">Revénir a la page d'accueil</a> | <a href="service_client.html">Nous contacter</a> | &copy; 2017 | design by <a href="#">Youcef</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
